@@ -48,8 +48,4 @@ with open(passFile, 'r') as file:
         t.start()
         time.sleep(0.5)
         
-        
-        
-        
-        
-        
+      
