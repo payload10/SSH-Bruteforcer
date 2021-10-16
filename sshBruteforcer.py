@@ -31,11 +31,13 @@ print('\n')
 print("\033[33;1m" + "Finding Password for User: " + username) 
 
 
+# Checking if the File Exists on OS
 if os.path.exists(passFile) == False:
     print("\033[37;1m" + '[!] File not Found!')
     sys.exit(1)
 
 
+# Open file in Read mode and perform Bruteforce along with Threading
 with open(passFile, 'r') as file:
     for line in file.readlines():
         if (flag == 1):
